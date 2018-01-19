@@ -24,6 +24,8 @@ public class NonaeGame extends NumberGame {
 		Random random = new Random(seed);
 		int secret = random.nextInt(upperBound) + 1;
 		this.secret = secret;
+		
+		super.setMessage("Welcome to the game, shall we start?");
 	}
 
 	/**
