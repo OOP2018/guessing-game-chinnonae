@@ -12,6 +12,8 @@ public class NonaeGame extends NumberGame {
 	private int upperBound;
 	/** The secret of this game. */
 	private int secret;
+	/** The number of guesses. */
+	private int count;
 	
 	/**
 	 * Initialize a new game.
@@ -64,6 +66,15 @@ public class NonaeGame extends NumberGame {
 	@Override
 	public String toString() {
 		return String.format("A game of guessing number between 1 to %d.", this.upperBound);
+	}
+
+	/**
+	 * Get number of guesses.
+	 * @return number of guesses.
+	 */
+	@Override
+	public int getCount() {
+		return this.count;
 	}
 	
 	
